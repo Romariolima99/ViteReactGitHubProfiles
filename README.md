@@ -51,12 +51,16 @@ Links diretos para os repositórios e perfil do GitHub do usuário.
 
 # Uso
 
+- Instale as dependências:
+
+- `npm install`
+
 - Inicie a aplicação localmente executando o comando na pasta do projeto.
 
-- npm run dev
+- `npm run dev`
 
-- Digite o nome de usuário do GitHub que você deseja consultar na barra de pesquisa e pressione Enter.
+- Digite o nome de usuário do GitHub que você deseja consultar na barra de pesquisa e pressione em buscar.
 
- - Você verá as informações do perfil do usuário, incluindo nome, bio, e linkedin.
+ - Você verá as informações do perfil do usuário, incluindo nome, bio e linkedin.
 
  <img src="https://i.imgur.com/5aIiHSF.png" alt="GIF" data-canonical-src="https://i.imgur.com/5aIiHSF.png" style="max-width: 50%;">
