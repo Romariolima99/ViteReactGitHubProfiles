@@ -25,3 +25,40 @@ Se você estiver desenvolvendo um aplicativo de produção, recomendamos atualiz
 - Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
 - Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
 - Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+
+
+# GitHub Profile Viewer
+
+O GitHub Profile Viewer é uma aplicação web desenvolvida em React e Vite que permite aos usuários consultar perfis do GitHub. Esta aplicação utiliza a API do GitHub para buscar informações públicas de usuários e exibir suas informações de perfil.
+
+# Funcionalidades 
+
+Consultar perfis do GitHub por nome de usuário.
+Exibir informações públicas do perfil, incluindo nome, avatar, número de seguidores, número de repositórios, etc.
+Links diretos para os repositórios e perfil do GitHub do usuário.
+
+# Pré-requisitos
+
+- Node.js e npm instalados na máquina.
+
+# Instalação
+
+- Clone este repositório:
+
+```js
+{
+    git clone https://github.com/seu-usuario/github-profile-viewer.git
+ },
+ ```
+
+# Uso
+
+- Inicie a aplicação localmente executando o comando na pasta do projeto.
+
+- npm run dev
+
+- Digite o nome de usuário do GitHub que você deseja consultar na barra de pesquisa e pressione Enter.
+
+ - Você verá as informações do perfil do usuário, incluindo nome, bio, e linkedin.
+
+ <img src="https://i.imgur.com/5aIiHSF.png" alt="GIF" data-canonical-src="https://i.imgur.com/5aIiHSF.png" style="max-width: 50%;">
