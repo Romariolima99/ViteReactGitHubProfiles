@@ -46,9 +46,7 @@ Links diretos para os repositórios e perfil do GitHub do usuário.
 - Clone este repositório:
 
 ```js
-{
     git clone https://github.com/seu-usuario/github-profile-viewer.git
- },
  ```
 
 # Uso
