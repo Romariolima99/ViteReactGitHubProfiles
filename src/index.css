@@ -147,8 +147,8 @@ button:focus-visible {
 /* Mídia query para telas pequenas */
 @media only screen and (max-width: 600px) {
   .container-app .container main .content div img {
-      width: 150px; /* Ajuste a largura conforme necessário */
-      height: 150px; /* Ajuste a altura conforme necessário */
+      width: 100px; /* Ajuste a largura conforme necessário */
+      height: 100px; /* Ajuste a altura conforme necessário */
   }
 }
 
