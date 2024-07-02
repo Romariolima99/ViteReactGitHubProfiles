@@ -49,6 +49,8 @@ Links diretos para os repositórios e perfil do GitHub do usuário.
     git clone https://github.com/seu-usuario/github-profile-viewer.git
  ```
 
+ ## Veja o Projeto: https://vite-react-ts-consulta-perfil-github.vercel.app/
+
 # Uso
 
 - Instale as dependências:
