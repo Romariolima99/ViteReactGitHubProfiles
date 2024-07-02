@@ -19,6 +19,7 @@ a {
   color: #646cff;
   text-decoration: inherit;
 }
+
 a:hover {
   color: #535bf2;
 }
@@ -47,9 +48,11 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
 button:hover {
   border-color: #646cff;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
@@ -60,10 +63,114 @@ button:focus-visible {
     color: #213547;
     background-color: #ffffff;
   }
+
   a:hover {
     color: #747bff;
   }
+
   button {
     background-color: #f9f9f9;
+  }
+}
+
+
+/* Responsivida guia contente */
+@media (max-width: 768px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .content > div {
+    max-width: 200px;
+    font-size: 1px; /* Ajuste conforme necessário Tamanho do container*/
+  }
+
+  .content img {
+    width: 100px; /* Ajuste conforme necessário */
+    height: 100px; /* Ajuste conforme necessário */
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+
+  .content h1 {
+    font-size: 1px; /* Ajuste conforme necessário */
+    margin-bottom: 5px;
+  }
+
+  .content p {
+    font-size: 14px; /* Ajuste conforme necessário */
+    margin-bottom: 5px;
+  }
+}
+
+/* Mídia query para telas pequenas */
+@media only screen and (max-width: 600px) {
+  .container-app .container .header-top ul li {
+      font-size: 25px; /* Ajuste para um tamanho menor conforme necessário */
+      white-space: nowrap; /* Impede que o texto quebre em várias linhas */
+  }
+}
+
+/* Mídia query para telas pequenas */
+@media only screen and (max-width: 600px) {
+  .container-app .container main .form h1 {
+      font-size: 14px; /* Ajuste para um tamanho menor conforme necessário */
+      white-space: nowrap; /* Impede que o texto quebre em várias linhas */
+      
+  }
+}
+
+/* Mídia query para telas pequenas */
+@media only screen and (max-width: 600px) {
+  .container-app .container main .content div {
+      width: 90%; /* Ajuste a largura conforme necessário */
+      height: auto; /* Ajuste a altura conforme necessário */
+      padding: 2rem; /* Ajuste o padding conforme necessário */
+  }
+}
+
+/* Mídia query para telas pequenas */
+@media only screen and (max-width: 600px) {
+  .container-app .container main input {
+      padding: 15px 8px; /* Ajuste do padding conforme necessário */
+      width: 70%; /* Ajuste a largura conforme necessário */
+      font-size: 1rem; /* Ajuste o tamanho da fonte conforme necessário */
+
+  }
+}
+
+/* Mídia query para telas pequenas */
+@media only screen and (max-width: 600px) {
+  .container-app .container main .content div img {
+      width: 150px; /* Ajuste a largura conforme necessário */
+      height: 150px; /* Ajuste a altura conforme necessário */
+  }
+}
+
+/* Mídia query para telas pequenas */
+@media only screen and (max-width: 600px) {
+  .container-app .container main button {
+      padding: 15px 8px; /* Ajuste do padding conforme necessário */
+      width: 70%; /* Ajuste a largura conforme necessário */
+      font-size: 14px; /* Ajuste o tamanho da fonte conforme necessário */
+  }
+}
+
+/* Mídia query para telas pequenas */
+@media only screen and (max-width: 600px) {
+  .container-app .container main .content div h1 {
+      font-size: 20px; /* Ajuste o tamanho da fonte conforme necessário */
+  }
+}
+
+/* Mídia query para telas pequenas */
+@media only screen and (max-width: 600px) {
+  .container-app .container main .content div p {
+      font-size: 16px; /* Ajuste o tamanho da fonte conforme necessário */
   }
 }
