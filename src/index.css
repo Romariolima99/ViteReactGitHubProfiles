@@ -199,7 +199,7 @@ main {
 /* Mídia query para telas pequenas */
 @media only screen and (max-width: 600px) {
   .container-app .container main .form h1 {
-      font-size: 14px; /* Ajuste para um tamanho menor conforme necessário */
+      font-size: 19px; /* Ajuste para um tamanho menor conforme necessário */
       white-space: nowrap; /* Impede que o texto quebre em várias linhas */
       
   }
@@ -208,7 +208,7 @@ main {
 /* Mídia query para telas pequenas */
 @media only screen and (max-width: 600px) {
   .container-app .container main .content div h1 {
-      font-size: 20px; /* Ajuste o tamanho da fonte conforme necessário */
+      font-size: 18px; /* Ajuste o tamanho da fonte conforme necessário */
   }
 }
 
