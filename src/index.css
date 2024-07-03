@@ -163,7 +163,7 @@ main {
 /* Mídia query para telas pequenas */
 @media only screen and (max-width: 600px) {
   .container-app .container main .content div {
-      width: 150%; /* Ajuste a largura conforme necessário */
+      width: 100%; /* Ajuste a largura conforme necessário */
       height: 100%; /* Ajuste a altura conforme necessário */
       padding: 2rem; /* Ajuste o padding conforme necessário */
   }
