@@ -41,7 +41,7 @@ function App() {
 
         <main>
           <div className="form">
-            <h1>Digite o usuario</h1>
+            <h1>DIGITE O USUARIO</h1>
             <input
               type="text"
               placeholder="Digite um usuario"
