@@ -6,7 +6,7 @@ type GITHUBResponse = {
   name: string;
   bio: string;
   avatar_url: string;
-  blog: string;
+  public_repos: string;
 };
 
 
@@ -15,7 +15,7 @@ function App() {
   const [name, setName] = useState("aguardando...");
   const [bio, setBio] = useState("Aguardando...");
   const [avatarURL, setAvatarURL] = useState("Aguardando...");
-  // const [blog, setblog] = useState("Aguardando...");
+  const [public_reposURL, setfollowers] = useState("Aguardando...");
 
   const handleSearch = () => {
     axios.get<GITHUBResponse>(`https://api.github.com/users/${search}`)
@@ -23,7 +23,7 @@ function App() {
         setName(res.data.name);
         setBio(res.data.bio);
         setAvatarURL(res.data.avatar_url);
-        // setblog(res.data.blog);
+        setfollowers(res.data.public_repos);
 
 
       });
@@ -54,7 +54,7 @@ function App() {
               <img src={avatarURL} alt="Perfil" />
               <h1>{name}</h1>
               <p>{bio}</p>
-              {/* <p>{'linkedin = ' + blog}</p> */}
+              <p>{'Repositórios: ' + public_reposURL}</p>
             </div>
           </div>
         </main>
