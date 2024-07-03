@@ -35,7 +35,7 @@ function App() {
       <div className="container">
         <header className='header-top'>
           <ul>
-            <li>Aplicação Github</li>
+            <li>APLICAÇÃO GITHUB</li>
           </ul>
         </header>
 
