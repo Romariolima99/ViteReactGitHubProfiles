@@ -20,14 +20,27 @@ function App() {
   const handleSearch = () => {
     axios.get<GITHUBResponse>(`https://api.github.com/users/${search}`)
       .then((res) => {
-        setName(res.data.name);
-        setBio(res.data.bio);
-        setAvatarURL(res.data.avatar_url);
-        setfollowers(res.data.public_repos);
-
-
+        if (res.status === 200) {
+          alert("Sucesso");
+          console.log("sucesso");
+  
+          setName(res.data.name);
+          setBio(res.data.bio);
+          setAvatarURL(res.data.avatar_url);
+          setfollowers(res.data.public_repos);
+        }
+      })
+      .catch((error) => {
+        if (error.response && error.response.status === 404) {
+          alert("Usuario não encontrado");
+          console.log("erro");
+        } else {
+          console.error("Erro ao buscar usuário:", error);
+        }
       });
   };
+
+ 
 
   return (
 
