@@ -1,6 +1,8 @@
 import './App.css'
 import axios from 'axios'
 import { useState } from 'react'
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.min.css';
 
 type GITHUBResponse = {
   name: string;
@@ -23,7 +25,7 @@ function App() {
         if (res.status === 200) {
           alert("Sucesso");
           console.log("sucesso");
-  
+
           setName(res.data.name);
           setBio(res.data.bio);
           setAvatarURL(res.data.avatar_url);
@@ -40,41 +42,40 @@ function App() {
       });
   };
 
- 
+
 
   return (
-
-    <div className="container-app">
-      <div className="container">
-        <header className='header-top'>
-          <ul>
-            <li>APLICAÇÃO GITHUB</li>
-          </ul>
-        </header>
-
-        <main>
-          <div className="form">
-            <h1>DIGITE O USUARIO</h1>
-            <input
-              type="text"
-              placeholder="Digite um usuario"
-              onChange={(e) => setSearch(e.target.value)}
-            />
-            <button onClick={handleSearch}>Buscar</button>
-          </div>
-          <div className="content">
-            <div>
-              <img src={avatarURL} alt="Perfil" />
-              <h1>{name}</h1>
-              <p>{bio}</p>
-              <p>{'Repositórios: ' + public_reposURL}</p>
+    <>
+      <ToastContainer position="top-center" bodyStyle={{ width: '100vw' }} />
+      <div className="container-app">
+        <div className="container">
+          <header className='header-top'>
+            <ul>
+              <li>APLICAÇÃO GITHUB</li>
+            </ul>
+          </header>
+          <main>
+            <div className="form">
+              <h1>DIGITE O USUARIO</h1>
+              <input
+                type="text"
+                placeholder="Digite um usuario"
+                onChange={(e) => setSearch(e.target.value)}
+              />
+              <button onClick={handleSearch}>Buscar</button>
             </div>
-          </div>
-        </main>
+            <div className="content">
+              <div>
+                <img src={avatarURL} alt="Perfil" />
+                <h1>{name}</h1>
+                <p>{bio}</p>
+                <p>{'Repositórios: ' + public_reposURL}</p>
+              </div>
+            </div>
+          </main>
+        </div>
       </div>
-    </div>
-
-
+    </>
 
 
   )
