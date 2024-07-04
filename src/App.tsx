@@ -56,8 +56,6 @@ function App() {
     })
   };
 
-
-
   return (
     <>
       <ToastContainer position="top-center" bodyStyle={{ width: '100vw' }} />
@@ -80,7 +78,7 @@ function App() {
             </div>
             <div className="content">
               <div>
-                <img src={avatarURL} alt="Perfil" />
+                <img src={avatarURL} alt="" />
                 <h1>{name}</h1>
                 <p>{bio}</p>
                 <p>{'Repositórios: ' + public_reposURL}</p>
