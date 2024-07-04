@@ -14,7 +14,7 @@ type GITHUBResponse = {
 
 function App() {
   const [search, setSearch] = useState("");
-  const [name, setName] = useState("aguardando...");
+  const [name, setName] = useState("Aguardando...");
   const [bio, setBio] = useState("Aguardando...");
   const [avatarURL, setAvatarURL] = useState("Aguardando...");
   const [public_reposURL, setfollowers] = useState("Aguardando...");
