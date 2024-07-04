@@ -65,4 +65,4 @@ Links diretos para os repositórios e perfil do GitHub do usuário.
 
  - Você verá as informações do perfil do usuário, incluindo nome, bio e linkedin.
 
- <img src="https://i.imgur.com/elhZzy5.png" alt="GIF" data-canonical-src="https://i.imgur.com/elhZzy5.png" style="max-width: 50%;">
+ <img src="https://i.imgur.com/ovoWIO1.png" alt="GIF" data-canonical-src="https://i.imgur.com/ovoWIO1.png" style="max-width: 50%;">
