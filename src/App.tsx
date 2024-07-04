@@ -23,7 +23,7 @@ function App() {
     axios.get<GITHUBResponse>(`https://api.github.com/users/${search}`)
       .then((res) => {
         if (res.status === 200) {
-          alert("Sucesso");
+          notifySucess();
           console.log("sucesso");
 
           setName(res.data.name);
@@ -34,13 +34,26 @@ function App() {
       })
       .catch((error) => {
         if (error.response && error.response.status === 404) {
-          alert("Usuario não encontrado");
+          notifyStatus404();
           console.log("erro");
         } else {
           console.error("Erro ao buscar usuário:", error);
         }
       });
   };
+
+  const notifySucess = () => {
+    toast.success("Consulta realizada com sucesso", {
+      className: 'custom-toast',
+
+    })
+  };
+
+  function notifyStatus404() {
+    toast.error("Usuario não encontrado")
+
+  }
+
 
 
 
