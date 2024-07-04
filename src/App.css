@@ -123,3 +123,14 @@
   font-weight: 700;
   margin-top: 2rem;
 }
+
+
+.custom-toast {
+  width: 300px; /* Ajuste a largura conforme necessário */
+  margin: 0 auto !important; /* Centraliza horizontalmente */
+}
+
+.custom-toast-erro{
+  width: 300px; /* Ajuste a largura conforme necessário */
+  margin: 0 auto !important; /* Centraliza horizontalmente */
+}

@@ -49,11 +49,12 @@ function App() {
     })
   };
 
-  function notifyStatus404() {
-    toast.error("Usuario não encontrado")
+  const notifyStatus404 = () => {
+    toast.error("Usuario não encontrado", {
+      className: 'custom-toast-erro'
 
-  }
-
+    })
+  };
 
 
 
